@@ -4,5 +4,5 @@ FROM jenkins/jenkins:lts
 USER root
 RUN apt-get update
 RUN apt-get install -y maven
-RUN JAVA_OPTS="-Xmx500m -Xms500m"
+ENV JAVA_OPTS="-Xmx500m -Xms500m"
 
